@@ -1,0 +1,8 @@
+@mixin flex($display, $justify) {
+    display: $display;
+    justify-content: $justify;
+}
+
+@mixin transition($property, $duration, $speed, $delay) {
+    transition: $property, $duration, $speed, $delay;    
+}

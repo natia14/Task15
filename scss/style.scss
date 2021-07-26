@@ -1,0 +1,24 @@
+.wraper {
+    @include flex(flex, space-around);
+    .left-block {
+        width: $width;
+        height: $height;
+        background-color: $color-red;
+        @include transition(all, 10s, linear, 1s);
+        &:hover {
+            background-color: $color-pink;
+        }
+    }
+    .right-block {
+        width: $width;
+        height: $height;
+        background-color: $color-blue;
+        @include transition(all, 10s, linear, 1s);
+        &:hover {
+            background-color: $color-purple;
+        }
+    }
+    .title {
+        font-family: $font;
+    }
+}
